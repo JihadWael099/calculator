@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="calculator-solid.png">
+</head>
+<body>
+    
+   <div class="container">
+   <div class="calc">
+   <form>
+   <div>
+    <input type="text" name="input" >
+   </div>
+   <div>
+    <button onclick="input.value=''; return false;" class="x">AC</button>
+    <button onclick="input.value.toString().slice(0,-1); return false;" class="x">DE</button>
+    <button onclick="input.value+='.' ; return false;" >.</button>
+    <button onclick="input.value+='/' ; return false; " class="x" >/</button>
+   </div>
+   <div>
+    <button onclick="input.value+='7' ; return false;" >7</button>
+    <button onclick="input.value+='8' ; return false;" >8</button>
+    <button onclick="input.value+='9' ; return false;" >9</button>
+    <button onclick="input.value+='*'; return false;" class="x" >*</button>
+   </div>
+   <div>
+    <button onclick="input.value+='4'; return false;"  >4</button>
+    <button onclick="input.value+='5'; return false;"  >5</button>
+    <button onclick="input.value+='6'; return false;"  >6</button>
+    <button onclick="input.value+='-'; return false;"  class="x">-</button>
+   </div>
+   <div>
+    <button onclick="input.value+='1'; return false;"  >1</button>
+    <button onclick="input.value+='2'; return false;"  >2</button>
+    <button onclick="input.value+='3'; return false;"  >3</button>
+    <button onclick="input.value+='+'; return false;"  class="x">+</button>
+   </div>
+   <div>
+    <button onclick="input.value+='00'; return false;"  >00</button>
+    <button onclick="input.value+='0'; return false;"  >0</button>
+    <button onclick="input.value=eval( input.value); return false;" class="x">=</button>
+   </div>
+
+   </form>
+
+   </div> 
+
+   </div>
+    
+</body>
+</html>
